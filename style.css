@@ -2,19 +2,27 @@ body {
     margin: 0 auto;
     font-family: 'Roboto';
 }
-.conteiner {
+
+.container {
     width: 80%;
     margin: 0 auto;
-
+    overflow: hidden;
 }
+
 .first-screen {
     background-color: #e5e5e5;
     width: 100%;
     height: 700px;
 }
 
-.first-screen div {
-    /* display: inline-block; */
+.first-screen-logo {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.first-screen-menu {
+    float: right;
+    width: 80%;
 }
 
 .first-screen-menu ul {
@@ -25,8 +33,7 @@ body {
 
 .first-screen-menu li {
     display: inline-block;
-    margin: 42px;
-    margin-top: 79px;
+    margin: 30px;
 }
 
 .first-screen-menu a {
@@ -35,44 +42,108 @@ body {
     text-decoration: none;
     font-size: 16px;
 }
+
+.first-screen-frame {
+    margin: 100px 0;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.first-screen-title {
+    margin: 100px 0;
+    width: 50%;
+    float: right;
+}
+
+.button-main {
+    text-align: center;
+    background-color: #34547A;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.button-main a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 .about-me {
     background-color: white;
-    width: 100%;
     height: 540px;
 }
+
+.about-me-text {
+    width: 50%;
+    margin: 150px auto;
+    text-align: center;
+}
+
 .numbers {
-    display: inline-block;
     background-color: #34547A;
     width: 100%;
     height: 250px;
 }
+
+.numbers-block {
+    display: inline-block;
+}
+
+.numbers-block h3 {
+    color: white;
+}
+
+.numbers-block p {
+    color: white;
+}
+
 .skills {
     background-color: #EEEFF1;
     width: 100%;
     height: 1004px;
 }
+
+.skills-line-main {
+    content: "";
+    background-color: #C4C4C4;
+    height: 4px;
+    width: 445px;
+}
+
+.skills-line-thin {
+    background-color: #34547A;
+    height: 4px;
+    width: 350px;
+}
+
 .video-title {
     background-color: #EEEFF1;
     width: 100%;
     height: 1004px;
 }
+
 .projects {
     display: inline-block;
     background-color: #34547A;
     width: 100%;
     height: 100px;
 }
+
 .clients {
     display: inline-block;
     background-color: white;
     width: 100%;
     height: 540px;
 }
+
 .form {
     background-color: #EEEFF1;
     width: 100%;
     height: 762px;
 }
+
 .footer {
     background-color: #34547A;
     width: 100%;
@@ -84,7 +155,8 @@ body {
     width: 100%;
     height: 300px;
 }
-@media (max-width: 1000px){
+
+@media (max-width: 1000px) {
     .test {
         background: green;
     }
