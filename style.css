@@ -71,26 +71,51 @@ body {
 }
 
 .about-me {
+    text-align: center;
     background-color: white;
-    height: 540px;
+    padding-top: 95px;
+    padding-bottom: 200px;
+}
+
+.about-me-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 
 .about-me-text {
-    width: 50%;
-    margin: 150px auto;
     text-align: center;
+    font-size: 16px;
+    width: 540px;
+    margin: 0 auto;
+    color: #727272;
 }
 
 .numbers {
     background-color: #34547A;
     width: 100%;
     height: 250px;
+    padding-top: 70px;
 }
 
 .numbers-block {
-    display: inline-block;
+    float: left;
+    width: 16%;
 }
 
+.numbers-block-column-left {
+    float: left;
+    width: 30%;
+}
+
+.numbers-block-column {
+    float: left;
+    width: 50%;
+}
+
+.numbers-ikon {
+    padding-top: 20px;
+}
 .numbers-block h3 {
     color: white;
 }
@@ -118,24 +143,39 @@ body {
     width: 350px;
 }
 
-.video-title {
+.video-title-background {
     background-color: #EEEFF1;
     width: 100%;
     height: 1004px;
 }
-
-.projects {
-    display: inline-block;
-    background-color: #34547A;
-    width: 100%;
-    height: 100px;
+.video-title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
 }
+.projects {
+    overflow: hidden;
+}
+.project-item {
+    width: 25%;
+    height: 480px;
+    float: left;
+    background-size: cover;
+}
+.project-item-laptop {
+    background-image: url("img/Rectangle 7.3.png");
 
-.clients {
-    display: inline-block;
-    background-color: white;
-    width: 100%;
-    height: 540px;
+}
+.project-item-text {
+    background-image: url("img/Rectangle 7.png");
+
+}
+.clients-logo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    float: left;
+    width: 25%;
+    text-align: center;
 }
 
 .form {
