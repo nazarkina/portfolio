@@ -72,9 +72,7 @@ body {
 
 .about-me {
     text-align: center;
-    background-color: white;
-    padding-top: 95px;
-    padding-bottom: 200px;
+    padding: 95px;
 }
 
 .about-me-title {
@@ -95,7 +93,7 @@ body {
     background-color: #34547A;
     width: 100%;
     height: 250px;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .numbers-block {
@@ -105,7 +103,7 @@ body {
 
 .numbers-block-column-left {
     float: left;
-    width: 30%;
+    width: 50%;
 }
 
 .numbers-block-column {
@@ -116,6 +114,7 @@ body {
 .numbers-ikon {
     padding-top: 20px;
 }
+
 .numbers-block h3 {
     color: white;
 }
@@ -125,13 +124,19 @@ body {
 }
 
 .skills {
-    background-color: #EEEFF1;
+    display: inline-block;
+    background-color: white;
     width: 100%;
-    height: 1004px;
+    height: 100px;
+    padding-top: 100px;
+}
+
+.skills-list {
+    float: left;
+    width: 50%;
 }
 
 .skills-line-main {
-    content: "";
     background-color: #C4C4C4;
     height: 4px;
     width: 445px;
@@ -143,33 +148,55 @@ body {
     width: 350px;
 }
 
-.video-title-background {
+.skills-image {
+    float: right;
+    width: 50%;
+}
+
+.video {
     background-color: #EEEFF1;
     width: 100%;
     height: 1004px;
 }
+
 .video-title {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    height: 600px;
     text-align: center;
+    margin: 0 auto;
 }
+
+.video-title-img {
+    background-image: url("img/Rectangle 5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.video-title-button {
+    position: relative;
+    top: 40%;
+}
+
 .projects {
     overflow: hidden;
 }
+
 .project-item {
     width: 25%;
     height: 480px;
     float: left;
     background-size: cover;
 }
+
 .project-item-laptop {
     background-image: url("img/Rectangle 7.3.png");
-
+    background-size: auto;
 }
+
 .project-item-text {
     background-image: url("img/Rectangle 7.png");
-
 }
+
 .clients-logo {
     padding-top: 100px;
     padding-bottom: 100px;
