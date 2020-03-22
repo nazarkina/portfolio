@@ -1,7 +1,18 @@
+/*including fonts*/
+@font-face {
+    font-family: 'Cormorant';
+    src: url("./fonts/CormorantInfant-Light.ttf");
+}
+/*   .ttt */
+/*   .ott */
+/*   .woff */
+/*   .woff2 */
+
 body {
     margin: 0 auto;
-    font-family: 'Roboto';
+    font-family: 'Cormorant';
 }
+
 
 .container {
     width: 80%;
@@ -217,70 +228,34 @@ body {
     height: 151px;
 }
 
-.test {
-    background-color: red;
-    width: 100%;
-    height: 300px;
-}
 
-@media (max-width: 1000px) {
-    .test {
-        background: green;
+
+@keyframes skyBackg {
+    0% {
+        background: blue;
+        width: 100%;
+    }
+    50% {
+        background: yellow;
+    }
+    100% {
+        background: violet;
+        width: 0%;
     }
 }
-.test1, test2, test3 {
-    background-color: green;
-    width: 100%;
+
+
+
+.sky {
     height: 300px;
+    animation-name: skyBackg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* animation-delay: 1s; */
 }
 
-.parent>.child {
-    color: blue;
-}
-span +h2 {
-    color: red;
-}
-
-li:nth-child(even) {
-    color: red;
-}
-
-li:nth-child(odd) {
-    color: green;
-}
-li:nth-child(10) {
-    color: blue;
-}
-
-li {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: red;ß
-}
-li:empty {
-    background-color: green;
-}
-
-input:focus {
-    outline: none;
-    border: 1px solid red;
-}
-h2:before {
-    content: 'ww';
-}
-
-.wrap {
-    width: 300px;
-    margin: 0 auto;
-}
-.wrap:before {
-    content: '*';
-}
-.wrap:after {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-color: violet;
+.sky:hover {
+    animation-play-state: paused;
 }
